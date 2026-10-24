@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>WzWz9aw9aw</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#FFF6D6;--card:#FFFFFF;--ink:#4A3A1A;--muted:#8a7650;--accent:#FFC93C;--accent2:#FF9F1C;--soft:#FFEFB0;--line:#F3DF9A;--err:#C0392B;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#2A2514;--card:#383119;--ink:#FFF3CC;--muted:#CDBB86;--soft:#4a4020;--line:#5a4d26}}
+:root[data-theme="dark"]{--bg:#2A2514;--card:#383119;--ink:#FFF3CC;--muted:#CDBB86;--soft:#4a4020;--line:#5a4d26}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Fredoka','Segoe UI',system-ui,sans-serif;font-size:17px;line-height:1.5;min-height:100vh}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 18px;max-width:820px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:8px;font-weight:600;font-size:18px}
+.brand svg{width:34px;height:34px}
+nav{display:flex;gap:6px}
+nav button{font:inherit;background:transparent;border:2px solid transparent;color:var(--ink);padding:6px 14px;border-radius:999px;cursor:pointer}
+nav button.on{background:var(--soft);border-color:var(--line)}
+main{max-width:820px;margin:0 auto;padding:8px 18px 48px}
+.view{display:none}.view.on{display:block}
+.hero{text-align:center;padding:36px 0 20px}
+.hero .pals{display:flex;justify-content:center;align-items:flex-end;gap:10px;margin-bottom:10px}
+.hero .pals svg:first-child{width:130px;height:130px}
+.hero .pals svg:last-child{width:92px;height:92px}
+h1{font-size:clamp(34px,9vw,58px);margin:6px 0 4px;letter-spacing:1px;font-weight:600}
+.sub{color:var(--muted);margin:0 0 28px}
+.btn{font:inherit;font-weight:600;background:var(--accent);color:#4A3A1A;border:none;border-radius:999px;padding:14px 32px;font-size:19px;cursor:pointer;box-shadow:0 5px 0 var(--accent2);transition:transform .08s}
+.btn:active{transform:translateY(3px);box-shadow:0 2px 0 var(--accent2)}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.card{background:var(--card);border:2px solid var(--line);border-radius:22px;padding:18px 20px;margin-bottom:16px}
+.card label{display:block;font-weight:500;margin-bottom:8px}
+.card .n{display:inline-block;background:var(--accent);color:#4A3A1A;border-radius:50%;width:26px;height:26px;text-align:center;line-height:26px;font-size:14px;margin-right:6px}
+input[type=text],textarea{width:100%;font:inherit;color:var(--ink);background:var(--bg);border:2px solid var(--line);border-radius:14px;padding:10px 12px;outline:none}
+input:focus,textarea:focus{border-color:var(--accent2)}
+textarea{min-height:90px;resize:vertical}
+.scale{display:grid;grid-template-columns:repeat(10,1fr);gap:6px}
+.scale button{font:inherit;font-weight:500;aspect-ratio:1;border-radius:12px;border:2px solid var(--line);background:var(--bg);color:var(--ink);cursor:pointer;padding:0}
+.scale button.on{background:var(--accent);border-color:var(--accent2);color:#4A3A1A;transform:scale(1.08)}
+.ends{display:flex;justify-content:space-between;font-size:13px;color:var(--muted);margin-top:6px}
+.err{color:var(--err);min-height:22px;margin:4px 0 10px;text-align:center}
+.center{text-align:center}
+h2{margin:8px 0 14px;font-size:28px}
+.month{margin:26px 0 10px;font-weight:600;font-size:20px;display:flex;align-items:center;gap:8px}
+.month svg{width:26px;height:26px}
+.entry .top{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:8px}
+.entry .who{font-weight:600;font-size:19px}
+.entry .date{color:var(--muted);font-size:14px}
+.badge{background:var(--accent);color:#4A3A1A;border-radius:999px;padding:2px 12px;font-weight:600;white-space:nowrap}
+.q{color:var(--muted);font-size:14px;margin-top:10px}
+.a{white-space:pre-wrap;word-break:break-word}
+.empty{text-align:center;color:var(--muted);padding:30px 0}
+.empty svg{width:90px;height:90px}
+.notice{background:var(--soft);border:2px dashed var(--line);border-radius:16px;padding:10px 14px;margin:8px 0 14px;font-size:15px;display:none}
+.done svg{width:120px;height:120px}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="duck" viewBox="0 0 100 100">
+<path d="M18 62 Q6 52 12 44 Q20 52 30 56Z" fill="#FFC21A"/>
+<ellipse cx="48" cy="70" rx="32" ry="22" fill="#FFD43B"/>
+<ellipse cx="42" cy="70" rx="15" ry="10" fill="#FFC21A"/>
+<circle cx="64" cy="38" r="21" fill="#FFD43B"/>
+<ellipse cx="86" cy="42" rx="11" ry="5.5" fill="#FF9F1C"/>
+<circle cx="69" cy="33" r="3.2" fill="#4A3A1A"/>
+<circle cx="70" cy="32" r="1" fill="#fff"/>
+<circle cx="63" cy="45" r="4.5" fill="#FF9AA2" opacity=".6"/>
+<path d="M40 91 L36 97 M50 91 L46 97" stroke="#FF9F1C" stroke-width="4" stroke-linecap="round"/>
+</symbol>
+<symbol id="chick" viewBox="0 0 100 100">
+<path d="M50 20 Q46 8 40 10 M50 20 Q52 6 60 8" stroke="#FFC21A" stroke-width="4" fill="none" stroke-linecap="round"/>
+<circle cx="50" cy="56" r="36" fill="#FFE066"/>
+<ellipse cx="17" cy="60" rx="7" ry="12" fill="#FFD43B" transform="rotate(-15 17 60)"/>
+<ellipse cx="83" cy="60" rx="7" ry="12" fill="#FFD43B" transform="rotate(15 83 60)"/>
+<circle cx="37" cy="50" r="4.5" fill="#4A3A1A"/><circle cx="63" cy="50" r="4.5" fill="#4A3A1A"/>
+<circle cx="38.5" cy="48.5" r="1.4" fill="#fff"/><circle cx="64.5" cy="48.5" r="1.4" fill="#fff"/>
+<polygon points="43,58 57,58 50,68" fill="#FF9F1C"/>
+<circle cx="28" cy="62" r="5" fill="#FF9AA2" opacity=".6"/><circle cx="72" cy="62" r="5" fill="#FF9AA2" opacity=".6"/>
+<path d="M42 92 L38 98 M58 92 L62 98" stroke="#FF9F1C" stroke-width="4" stroke-linecap="round"/>
+</symbol>
+</svg>
+
+<header>
+  <div class="brand"><svg><use href="#duck"/></svg><span>WzWz9aw9aw</span></div>
+  <nav>
+    <button id="nHome" class="on" type="button">Home</button>
+    <button id="nHist" type="button">History</button>
+  </nav>
+</header>
+
+<main>
+  <section id="home" class="view on">
+    <div class="hero">
+      <div class="pals"><svg><use href="#duck"/></svg><svg><use href="#chick"/></svg></div>
+      <h1>WzWz9aw9aw</h1>
+      <p class="sub">Our monthly check-in</p>
+      <button class="btn" id="start" type="button">Start the questionnaire</button>
+    </div>
+  </section>
+
+  <section id="form" class="view">
+    <h2>This month’s questions</h2>
+    <div class="notice" id="notice"></div>
+    <div class="card"><label for="q1"><span class="n">1</span>Are you Memyy or Nezar?</label><input type="text" id="q1" maxlength="60" autocomplete="off"></div>
+    <div class="card"><label for="q2"><span class="n">2</span>What do you think about Shift Career?</label><textarea id="q2" maxlength="3000"></textarea></div>
+    <div class="card"><label for="q3"><span class="n">3</span>How was your month?</label><textarea id="q3" maxlength="3000"></textarea></div>
+    <div class="card"><label><span class="n">4</span>On a scale from 1 to 10, how happy and excited do you feel about this relationship?</label>
+      <div class="scale" id="scale"></div>
+      <div class="ends"><span>1 = not at all</span><span>10 = very much</span></div></div>
+    <div class="card"><label for="q5"><span class="n">5</span>Any additional notes?</label><textarea id="q5" maxlength="3000"></textarea></div>
+    <div class="err" id="err"></div>
+    <div class="center"><button class="btn" id="submit" type="button">Submit my answers</button></div>
+  </section>
+
+  <section id="done" class="view">
+    <div class="center done" style="padding:40px 0">
+      <svg><use href="#chick"/></svg>
+      <h2>All done!</h2>
+      <p class="sub">Your answers were saved to History.</p>
+      <button class="btn" id="toHist" type="button">See History</button>
+    </div>
+  </section>
+
+  <section id="history" class="view">
+    <h2>History</h2>
+    <div id="list"></div>
+  </section>
+</main>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script>
+// ====== PASTE YOUR FIREBASE SETTINGS HERE (replace the whole block) ======
+var firebaseConfig = {
+  apiKey: "PASTE_HERE",
+  authDomain: "PASTE_HERE",
+  projectId: "PASTE_HERE",
+  storageBucket: "PASTE_HERE",
+  messagingSenderId: "PASTE_HERE",
+  appId: "PASTE_HERE"
+};
+// =========================================================================
+(function(){
+var $=function(i){return document.getElementById(i)};
+var db=null,entries=[],rating=0,loaded=false;
+
+function show(v){
+  ['home','form','done','history'].forEach(function(id){$(id).classList.toggle('on',id===v)});
+  $('nHome').classList.toggle('on',v!=='history');
+  $('nHist').classList.toggle('on',v==='history');
+  window.scrollTo(0,0);
+  if(v==='history')renderHistory();
+}
+$('nHome').onclick=function(){show('home')};
+$('nHist').onclick=function(){show('history')};
+$('start').onclick=function(){show('form')};
+$('toHist').onclick=function(){show('history')};
+
+var sc=$('scale');
+for(var i=1;i<=10;i++){(function(n){
+  var b=document.createElement('button');b.type='button';b.textContent=n;
+  b.onclick=function(){rating=n;Array.prototype.forEach.call(sc.children,function(c,k){c.classList.toggle('on',k===n-1)})};
+  sc.appendChild(b);
+})(i)}
+
+function notice(t){var n=$('notice');n.textContent=t;n.style.display=t?'block':'none'}
+
+$('submit').onclick=async function(){
+  var who=$('q1').value.trim(),career=$('q2').value.trim(),month=$('q3').value.trim(),notes=$('q5').value.trim();
+  var e=$('err');e.textContent='';
+  if(!who||!career||!month||!rating){e.textContent='Please answer questions 1 to 4 first.';return}
+  if(!db){e.textContent='Saving is not set up yet. Check the Firebase settings in the file.';return}
+  var btn=$('submit');btn.disabled=true;
+  var now=new Date();
+  try{
+    await db.collection('entries').add({who:who,career:career,month:month,rating:rating,notes:notes,createdAt:now.toISOString()});
+    $('q1').value=$('q2').value=$('q3').value=$('q5').value='';
+    rating=0;Array.prototype.forEach.call(sc.children,function(c){c.classList.remove('on')});
+    show('done');
+  }catch(err){e.textContent='Could not save. Please try again in a moment.'}
+  btn.disabled=false;
+};
+
+function el(tag,cls,txt){var x=document.createElement(tag);if(cls)x.className=cls;if(txt!==undefined)x.textContent=txt;return x}
+
+function renderHistory(){
+  var list=$('list');list.textContent='';
+  if(!db){list.appendChild(el('div','notice','Firebase is not connected yet. Paste your Firebase settings into the file.'));list.lastChild.style.display='block';return}
+  if(!loaded){list.appendChild(el('div','empty','Loading...'));return}
+  if(!entries.length){
+    var em=el('div','empty');
+    var s=document.createElementNS('http://www.w3.org/2000/svg','svg');
+    var u=document.createElementNS('http://www.w3.org/2000/svg','use');u.setAttribute('href','#chick');s.appendChild(u);
+    em.appendChild(s);em.appendChild(el('div','','No answers yet. Start the questionnaire to add the first one.'));
+    list.appendChild(em);return;
+  }
+  var sorted=entries.slice().sort(function(a,b){return a.createdAt<b.createdAt?1:-1});
+  var last='';
+  sorted.forEach(function(x){
+    var d=new Date(x.createdAt);
+    var key=d.getFullYear()+'-'+d.getMonth();
+    if(key!==last){
+      last=key;
+      var m=el('div','month');
+      var s=document.createElementNS('http://www.w3.org/2000/svg','svg');
+      var u=document.createElementNS('http://www.w3.org/2000/svg','use');u.setAttribute('href','#duck');s.appendChild(u);
+      m.appendChild(s);m.appendChild(el('span','',d.toLocaleDateString('en',{month:'long',year:'numeric'})));
+      list.appendChild(m);
+    }
+    var c=el('div','card entry');
+    var top=el('div','top');
+    var l=el('div');l.appendChild(el('div','who',x.who||''));
+    l.appendChild(el('div','date',d.toLocaleDateString('en',{day:'numeric',month:'short',year:'numeric'})));
+    top.appendChild(l);top.appendChild(el('div','badge',(x.rating||'?')+' / 10'));
+    c.appendChild(top);
+    c.appendChild(el('div','q','What do you think about Shift Career?'));c.appendChild(el('div','a',x.career||''));
+    c.appendChild(el('div','q','How was your month?'));c.appendChild(el('div','a',x.month||''));
+    if(x.notes){c.appendChild(el('div','q','Additional notes'));c.appendChild(el('div','a',x.notes))}
+    list.appendChild(c);
+  });
+}
+
+(function(){
+  try{
+    if(firebaseConfig.apiKey==='PASTE_HERE')throw new Error('no config');
+    firebase.initializeApp(firebaseConfig);
+    db=firebase.firestore();
+  }catch(e){db=null}
+  if(!db){notice('Firebase is not connected yet. Paste your Firebase settings into the file.');renderHistory();return}
+  db.collection('entries').onSnapshot(function(snap){
+    entries=snap.docs.map(function(d){var o=d.data()||{};o.id=d.id;return o});
+    loaded=true;renderHistory();
+  },function(){loaded=true;notice('Could not load History. Check your Firebase rules.');renderHistory()});
+})();
+})();
+</script>
+</body>
+</html>
